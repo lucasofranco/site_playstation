@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Programação para Internet - Tanizaka</title>
+</head>
+
+<body>
+    <!-- Header/Navegação -->
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <h2>TANIZAKA</h2>
+            </a>
+
+            <nav class="navbar">
+                <a href="#home" onclick="showPage('home')">Início</a>
+                <a href="#seguranca" onclick="showPage('seguranca')">Segurança</a>
+                <a href="#comunicacao" onclick="showPage('comunicacao')">Comunicação</a>
+                <a href="#etica" onclick="showPage('etica')">Ética</a>
+                <a href="#privacidade" onclick="showPage('privacidade')">Privacidade</a>
+                <a href="#ods" onclick="showPage('ods')">ODS</a>
+                <a href="#ferramentas" onclick="showPage('ferramentas')">Ferramentas</a>
+                <a href="#bibliografia" onclick="showPage('bibliografia')">Bibliografia</a>
+                <a href="#contato" onclick="showPage('contato')">Contato</a>
+            </nav>
+        </section>
+    </header>
+
+    <!-- Página Home -->
+    <div id="home" class="page active">
+        <div class="home-banner">
+            <section>
+                <div class="content">
+                    <h1>Programação para Internet</h1>
+                    <p>Desenvolvimento web moderno com HTML, CSS e JavaScript</p>
+                    <a href="#" class="botao" onclick="showPage('seguranca')">Explorar</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Página Segurança -->
+    <div id="seguranca" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Segurança</h1>
+                <p class="subtitle">Protegendo dados e sistemas</p>
+            </div>
+            <div class="page-content">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cibersegurança e Proteção de Dados</h3>
+                    <p>A cibersegurança é crucial para proteger sistemas, redes e dados contra ataques e acessos não autorizados. No contexto da programação para internet, isso envolve a implementação de medidas robustas para garantir a integridade, confidencialidade e disponibilidade das informações.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Práticas Essenciais de Segurança</h3>
+                    <ul>
+                        <li><strong>LGPD:</strong> Conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018) para a proteção de dados pessoais.</li>
+                        <li><strong>Plano de Contingência:</strong> Desenvolvimento de ações para manter a operação em caso de falhas ou incidentes.</li>
+                        <li><strong>Mitigação de Vulnerabilidades:</strong> Identificação e correção de fragilidades em sistemas e processos.</li>
+                        <li><strong>Gestão de Riscos:</strong> Análise e tratamento de possibilidades de eventos que causem impacto negativo.</li>
+                        <li><strong>HTTPS e Criptografia:</strong> Uso de protocolos seguros e criptografia para proteger dados em trânsito e em repouso.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Comunicação -->
+    <div id="comunicacao" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Comunicação</h1>
+                <p class="subtitle">Interação efetiva entre sistemas</p>
+            </div>
+            <div class="page-content">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Comunicação Web</h3>
+                    <p>A comunicação entre cliente e servidor é o coração da programação web. Através de protocolos como HTTP e WebSocket, os dados são transmitidos de forma eficiente e confiável.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Tecnologias de Comunicação</h3>
+                    <ul>
+                        <li>HTTP/HTTPS - Protocolo padrão da web</li>
+                        <li>REST API - Arquitetura para serviços web</li>
+                        <li>WebSocket - Comunicação bidirecional em tempo real</li>
+                        <li>JSON - Formato de troca de dados</li>
+                        <li>AJAX - Requisições assíncronas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Ética -->
+    <div id="etica" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Ética</h1>
+                <p class="subtitle">Desenvolvimento responsável e consciente</p>
+            </div>
+            <div class="page-content">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Responsabilidade do Desenvolvedor</h3>
+                    <p>Os desenvolvedores têm a responsabilidade de criar aplicações que respeitem a privacidade, segurança e dignidade dos usuários. A ética na programação vai além do código, envolvendo decisões conscientes sobre o impacto social das aplicações.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Princípios Éticos</h3>
+                    <ul>
+                        <li>Transparência no uso de dados</li>
+                        <li>Respeito à privacidade do usuário</li>
+                        <li>Acessibilidade para todos</li>
+                        <li>Honestidade e integridade</li>
+                        <li>Responsabilidade social</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Privacidade -->
+    <div id="privacidade" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Privacidade</h1>
+                <p class="subtitle">Proteção de informações pessoais</p>
+            </div>
+            <div class="page-content">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Direito à Privacidade</h3>
+                    <p>A privacidade é um direito fundamental. As aplicações web devem ser desenvolvidas com mecanismos robustos para proteger dados pessoais dos usuários, em conformidade com leis como LGPD e GDPR.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Medidas de Proteção</h3>
+                    <ul>
+                        <li>Coleta mínima de dados necessários</li>
+                        <li>Consentimento explícito do usuário</li>
+                        <li>Criptografia de dados em trânsito e repouso</li>
+                        <li>Política de privacidade clara</li>
+                        <li>Direito ao esquecimento (LGPD)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página ODS -->
+    <div id="ods" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Alinhamento com a ODS</h1>
+                <p class="subtitle">Objetivos de Desenvolvimento Sustentável</p>
+            </div>
+            <div class="page-content">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>ODS 7: Energia Sustentável e Acessível</h3>
+                    <p>O Objetivo de Desenvolvimento Sustentável (ODS) 7 da ONU visa assegurar o acesso confiável, sustentável, moderno e a preço acessível à energia para todos. A programação para internet pode contribuir para este objetivo através de aplicações que otimizam o consumo de energia, promovem fontes renováveis e aumentam a eficiência energética em sistemas e infraestruturas digitais.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Contribuições da Programação para o ODS 7</h3>
+                    <ul>
+                        <li><strong>Otimização de Servidores:</strong> Desenvolvimento de códigos eficientes que reduzem o consumo energético de data centers.</li>
+                        <li><strong>Monitoramento de Consumo:</strong> Criação de dashboards e ferramentas para acompanhar e gerenciar o uso de energia.</li>
+                        <li><strong>Plataformas de Energias Renováveis:</strong> Desenvolvimento de sistemas para gerenciamento e comercialização de energia solar, eólica, etc.</li>
+                        <li><strong>Eficiência em Dispositivos:</strong> Criação de aplicações que operam com baixo consumo de bateria em dispositivos móveis e IoT.</li>
+                        <li><strong>Conscientização:</strong> Desenvolvimento de conteúdos e plataformas que educam sobre o uso consciente e sustentável da energia.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Ferramentas -->
+    <div id="ferramentas" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Ferramentas</h1>
+                <p class="subtitle">Recursos, Ferramentas, Técnicas e Padrões Utilizados</p>
+            </div>
+            <div class="page-content">
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Ferramentas de Desenvolvimento</h3>
+                    <ul>
+                        <li><strong>HTML5:</strong> Linguagem de marcação para estruturação de páginas web</li>
+                        <li><strong>CSS3:</strong> Folhas de estilo para design responsivo e moderno</li>
+                        <li><strong>JavaScript:</strong> Linguagem de programação para interação e lógica do cliente</li>
+                        <li><strong>Git:</strong> Sistema de controle de versão para gerenciamento de código</li>
+                        <li><strong>Visual Studio Code:</strong> Editor de código avançado</li>
+                    </ul>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Técnicas e Padrões</h3>
+                    <ul>
+                        <li><strong>Responsive Design:</strong> Design adaptativo para diferentes tamanhos de tela</li>
+                        <li><strong>SEO:</strong> Otimização para mecanismos de busca</li>
+                        <li><strong>Acessibilidade Web (WCAG):</strong> Padrões de acessibilidade para todos os usuários</li>
+                        <li><strong>Segurança Web (OWASP):</strong> Práticas de segurança contra vulnerabilidades</li>
+                        <li><strong>Performance:</strong> Otimização de velocidade e eficiência</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Bibliografia -->
+    <div id="bibliografia" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Bibliografia e Referências</h1>
+                <p class="subtitle">Fontes e Referências Utilizadas</p>
+            </div>
+            <div class="page-content bibliography-content">
+                <div class="content-card full-width">
+                    <div class="card-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Livros Recomendados</h3>
+                    <ul>
+                        <li><strong>BLANK, Steve; DORF, Bob.</strong> The Startup Owner's Manual: The Step-by-step Guide for Building a Great Company. Pescadero, CA: Ranch Publishing, 2012.</li>
+                        <li><strong>CROLL, Alistair; YOSKOVITZ, Benjamin.</strong> Lean Analytics: Use Data to Build a Better Startup Faster. Sebastopol, CA: O'Reilly, 2013.</li>
+                        <li><strong>OSTERWALDER, Alexander; PIGNEUR, Yves.</strong> Business Model Generation: Inovação em modelos de negócios. Um manual para visionários, inovadores e revolucionários. São Paulo: Alta Books, 2013.</li>
+                        <li><strong>RIES, Eric.</strong> A Startup Enxuta: Como Empreendedores atuais utilizam a inovação contínua para criar empresas extremamente bem sucedidas. São Paulo: Leya, 2012.</li>
+                    </ul>
+                </div>
+                <div class="content-card full-width">
+                    <div class="card-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Normas e Padrões</h3>
+                    <ul>
+                        <li><strong>ABNT NBR 6023:</strong> Informação e documentação - Referências - Elaboração</li>
+                        <li><strong>LGPD (Lei nº 13.709/2018):</strong> Lei Geral de Proteção de Dados Pessoais</li>
+                        <li><strong>WCAG 2.1:</strong> Web Content Accessibility Guidelines - Diretrizes de Acessibilidade para Conteúdo Web</li>
+                        <li><strong>OWASP Top 10:</strong> As 10 Principais Vulnerabilidades de Segurança em Aplicações Web</li>
+                        <li><strong>IEEE 802.11:</strong> Padrão para Redes Sem Fio</li>
+                    </ul>
+                </div>
+                <div class="content-card full-width">
+                    <div class="card-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Documentos e Referências Online</h3>
+                    <ul>
+                        <li><strong>MDN Web Docs:</strong> Recurso abrangente para HTML, CSS e JavaScript - <a href="https://developer.mozilla.org" target="_blank">https://developer.mozilla.org</a></li>
+                        <li><strong>W3C (World Wide Web Consortium):</strong> Padrões da web - <a href="https://www.w3.org" target="_blank">https://www.w3.org</a></li>
+                        <li><strong>ONU - Objetivos de Desenvolvimento Sustentável:</strong> <a href="https://www.un.org/sustainabledevelopment" target="_blank">https://www.un.org/sustainabledevelopment</a></li>
+                        <li><strong>OWASP - Open Web Application Security Project:</strong> <a href="https://owasp.org" target="_blank">https://owasp.org</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Página Contato -->
+    <div id="contato" class="page">
+        <section>
+            <div class="page-header">
+                <h1>Contato</h1>
+                <p class="subtitle">Entre em contato conosco</p>
+            </div>
+            <div class="page-content">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p>contato@tanizaka.com</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Telefone</h4>
+                            <p>(11) 9999-9999</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Endereço</h4>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="botao">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section>
+            <p>&copy; 2025 Tanizaka - Programação para Internet. Todos os direitos reservados.</p>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
